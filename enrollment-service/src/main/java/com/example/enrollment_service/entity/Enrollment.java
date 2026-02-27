@@ -21,10 +21,10 @@ public class Enrollment {
     private Integer id;
 
     @Column(nullable = false)
-    private Integer student_id;
+    private Integer studentId;
 
     @Column(nullable = false)
-    private Integer course_id;
+    private Integer courseId;
 
     private LocalDate enrollmentDate;
 
