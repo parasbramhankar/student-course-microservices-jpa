@@ -30,6 +30,14 @@ public class EnrollmentServiceImpl implements EnrollmentService {
     CourseApiClient courseApiClient;
 
     public EnrollmentResponseDto enrollStudent(EnrollmentRequestDto requestDto){
+
+        // Validate student exists
+        studentApiClient.getStudentById(requestDto.getStudentId());
+
+        // Validate course exists
+        courseApiClient.getCourseById(requestDto.getCourseId());
+
+
         Enrollment enrollment=new Enrollment();
         enrollment.setStudentId(requestDto.getStudentId());
         enrollment.setCourseId(requestDto.getCourseId());
