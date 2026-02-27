@@ -19,7 +19,8 @@ public class Mapper {
         return dto;
     }
 
-    public StudentCoursesResponseDto mapToStudentCoursesResponseDto(){
+//    public StudentCoursesResponseDto mapToStudentCoursesResponseDto(){
+//
+//    }
 
-    }
 }
