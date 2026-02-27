@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDate;
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -13,5 +15,6 @@ public class EnrollmentRequestDto {
 
     private Integer studentId;
     private Integer courseId;
+    private LocalDate enrollmentDate;
 
 }
